@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News Homepage</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-32x32.png">
+
+    <link rel="stylesheet" href="/src/css/dist/site.min.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
+    <script src="/src/js/dist/concat.min.js" defer></script>
+  </head>
+  <body class="relative min-h-screen transition-all overflow-x-hidden">
+    <div class="overlay absolute top-0 right-0 bottom-0 left-0 w-full h-full opacity-0"></div>
+    <header class="header relative pt-7 md:pt-[90px]">
+      <div class="container">
+        <div class="flex justify-between items-center">
+          <a class="header-logo" href="/"><img src="./assets/images/logo.svg" alt="W Logo" width="64" height="40" /></a>
+          <nav class="header-nav absolute right-[-100%] md:static top-0 right-0 py-36 px-6 md:p-0 w-[255px] md:w-auto h-screen md:h-auto ease-in-out duration-300 z-40 overflow-y-auto">
+            <ul>
+              <a class="block md:inline-block text-lg md:text-[15px] leading-6 md:leading-[26px] transition-all" href="/" title="Home">Home</a>
+              <a class="block md:inline-block mt-6 text-lg md:mt-0 md:ml-10 md:text-[15px] leading-6 md:leading-[26px] transition-all" href="#" title="New">New</a>
+              <a class="block md:inline-block mt-6 text-lg md:mt-0 md:ml-10 md:text-[15px] leading-6 md:leading-[26px] transition-all" href="#" title="Popular">Popular</a>
+              <a class="block md:inline-block mt-6 text-lg md:mt-0 md:ml-10 md:text-[15px] leading-6 md:leading-[26px] transition-all" href="#" title="Trending">Trending</a>
+              <a class="block md:inline-block mt-6 text-lg md:mt-0 md:ml-10 md:text-[15px] leading-6 md:leading-[26px] transition-all" href="#" title="Categories">Categories</a>
+            </ul>
+          </nav>
+          <button class="hamburger hamburger--spin z-50" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="content mt-8 md:mt-[60px] pb-[75px] xl:pb-[130px]">
+      <div class="container">
+        <div class="row md:flex gap-[30px]">
+          <main class="featured flex-1">
+            <picture>
+              <source srcset="./assets/images/image-web-3-mobile.jpg" media="(max-width: 375px)" />
+              <source srcset="./assets/images/image-web-3-desktop.jpg" />
+              <img src="./assets/images/image-web-3-desktop.jpg" alt="Featured Image" />
+            </picture>
+            <div class="row xl:flex mt-[30px] gap-[30px]">
+              <div class="col xl:flex-1">
+                <h1 class="text-[40px] xl:text-[56px] leading-10 xl:leading-[56px]">The Bright Future of Web 3.0?</h1>
+              </div>
+              <div class="col xl:flex-1 mt-4 xl:m-0">
+                <p class="text-[15px] leading-[26px]">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+                <a class="button inline-block mt-6 xl:mt-[30px] py-3 px-[30px] text-sm font-bold leading-6 tracking-[4px] uppercase transition-all" href="#" title="Read More">Read More</a>
+              </div>
+            </div>
+          </main>
+          <aside class="sidebar mt-16 md:m-0 py-6 px-5 md:py-8 md:px-6 md:w-[350px]">
+            <h2 class="text-[40px] leading-10">New</h2>
+            <div class="sidebar-item mt-[35px]">
+              <a class="transition-all" href="#"><h3 class="text-xl leading-6">Hydrogen VS Electric Cars</h3></a>
+              <p class="mt-2 text-[15px] leading-[26px]">Will hydrogen-fueled cars ever catch up to EVs?</p>
+            </div>
+            <div class="sidebar-item border-t mt-[30px] pt-[30px]">
+              <a class="transition-all" href="#"><h3 class="text-xl leading-6">The Downsides of AI Artistry</h3></a>
+              <p class="mt-2 text-[15px] leading-[26px]">What are the possible adverse effects of on-demand AI image generation?</p>
+            </div>
+            <div class="sidebar-item border-t mt-[30px] pt-[30px]">
+              <a class="transition-all" href="#"><h3 class="text-xl leading-6">Is VC Funding Drying Up?</h3></a>
+              <p class="mt-2 text-[15px] leading-[26px]">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+          </aside>
+        </div>
+        <div class="row flex flex-wrap mt-[65px] xl:mt-[70px] md:mx-[-15px] xl:mx-0 gap-8 md:gap-0 xl:gap-[30px]">
+          <div class="item flex md:flex-[50%] xl:flex-1 md:px-[15px] xl:p-0">
+            <img class="self-start mr-6" src="./assets/images/image-retro-pcs.jpg" alt="Retro Computers" width="100" height="100%" />
+            <div>
+              <h4 class="text-[32px] leading-6">01</h4>
+              <a class="block mt-3 text-lg leading-6 transition-all" href="#"><h5>Reviving Retro PCs</h5></a>
+              <p class="mt-2 text-[15px] leading-[26px]">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="item flex md:flex-[50%] xl:flex-1 md:m-0 md:px-[15px] xl:p-0">
+            <img class="self-start mr-6" src="./assets/images/image-top-laptops.jpg" alt="Retro Computers" width="100" height="100%" />
+            <div>
+              <h4 class="text-[32px] leading-6">02</h4>
+              <a class="block mt-3 text-lg leading-6 transition-all" href="#"><h5>Top 10 Laptops of 2022</h5></a>
+              <p class="mt-2 text-[15px] leading-[26px]">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="item flex md:flex-[50%] xl:flex-1 md:mt-8 xl:m-0 md:px-[15px] xl:p-0">
+            <img class="self-start mr-6" src="./assets/images/image-gaming-growth.jpg" alt="Retro Computers" width="100" height="100%" />
+            <div>
+              <h4 class="text-[32px] leading-6">03</h4>
+              <a class="block mt-3 text-lg leading-6 transition-all" href="#"><h5>The Growth of Gaming</<h5></a>
+              <p class="mt-2 text-[15px] leading-[26px]">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

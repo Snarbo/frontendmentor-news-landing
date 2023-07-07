@@ -1,0 +1,21 @@
+.header {
+  &-nav {
+    background-color: $color-off-white;
+
+    a {
+      color: $color-dark-blue;
+
+      &:hover {
+        color: $color-light-red;
+      }
+
+      @media all and (min-width: 768px) {
+        color: $color-gunmetal;
+      }
+    }
+
+    &.is-active {
+      right: 0;
+    }
+  }
+}
